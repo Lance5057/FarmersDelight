@@ -143,9 +143,15 @@ tasks.withType(ProcessResources).configureEach {
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
-            from components.java
+            
             groupId = 'com.github.vectorwing'
             artifactId = 'farmers-delight'
+            
+            from components.java
+            
+            pom {
+                name = 'farmers-delight'
+            }
         }
     }
     repositories {
