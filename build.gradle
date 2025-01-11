@@ -145,6 +145,11 @@ publishing {
         register('mavenJava', MavenPublication) {
             from components.java
         }
+         release(MavenPublication) {
+                from components.java
+                groupId = 'com.github.vectorwing'
+                artifactId = 'farmers-delight'
+            }
     }
     repositories {
         maven {
