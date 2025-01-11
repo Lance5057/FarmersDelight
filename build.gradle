@@ -6,8 +6,6 @@ plugins {
     id 'net.neoforged.moddev' version '1.0.0'
 }
 
-apply plugin: 'maven-publish'
-
 tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
 }
